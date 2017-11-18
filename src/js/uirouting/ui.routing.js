@@ -1,4 +1,4 @@
-const routing = ($stateProvider,  $urlRouterProvider, $locationProvider) => {
+const uiRouting = ($stateProvider,  $urlRouterProvider, $locationProvider) => {
     'ngInject';
 
     $stateProvider
@@ -11,12 +11,15 @@ const routing = ($stateProvider,  $urlRouterProvider, $locationProvider) => {
             component: 'homeComponent'/*,
             resolve: {
                 test: function(TestService) {    
+                    //'ngInject';
+
                     console.log(TestService.getData());
                 }
             }*/
         });
+        
     $urlRouterProvider
         .otherwise('/');
 }
-export default routing;
 
+export default uiRouting;
