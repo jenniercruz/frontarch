@@ -8,7 +8,7 @@ class HomeCtrl {
     }
 
     $onInit() {
-        console.log('HOME CONTROLLER!!');
+        console.log('Home Controller');
         
         //this.TestService.getData();
     }
